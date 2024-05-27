@@ -1,0 +1,21 @@
+{{define "game/index.tmpl"}}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Search Page</title>
+        <link rel="stylesheet" href="/static/css/game_index.css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="performSearch()">Search</button>
+        </div>
+        <div id="results" class="results"></div>
+    </div>
+    <script src="/static/js/game_index.js"></script>
+    </body>
+    </html>
+{{end}}
